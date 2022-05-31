@@ -1,0 +1,102 @@
+//$font-family-sans-serif: 'Space Grotesk', sans-serif;
+$theme-colors:(
+ "primary" : #335eea,
+"primary-soft" : #eaeffd,
+"success" : #389e80,
+        "danger" : #f65555,
+);
+$btn-padding-y: 10px;
+$btn-border-radius: 7px;
+$btn-padding-y-lg: 12px;
+$btn-padding-x-lg: 15px;
+$border-radius : 7px;
+
+
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;500;600&family=Montserrat:wght@300;500;700&family=Padauk&family=Space+Grotesk:wght@300;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+}
+.Deg::before{
+  background: #f1f4f8;
+  height: 100px;
+  width: 101%;
+  margin-top: -30px;
+  content: "";
+  -webkit-transform: rotate(357deg);
+  display: inline-block;
+  z-index: -1;
+  position: absolute;
+}
+.Deg2::before{
+  background: #2b3f65;
+  height: 100px;
+  width: 101%;
+  margin-top: -50px;
+  content: "";
+  -webkit-transform: rotate(357deg);
+  display: inline-block;
+  z-index: 1;
+  position: absolute;
+}
+
+p{
+  font-size: 1.0625rem;
+}
+.Blur{
+  backdrop-filter: blur(9px);
+}
+.dashkit-img{
+  transform: rotateY(-35deg) rotateX(15deg);
+  border-radius: 7px;
+  box-shadow: 20px 20px 35px grey;
+}
+.dask-img-container{
+  perspective: 1500px;
+  transform-style: preserve-3d;
+}
+.carousel-btn-next{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #335eea;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  top: 45%;
+  right: -30px;
+  z-index: 10010;
+  overflow: visible;
+
+}
+.carousel-btn-prev{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #335eea;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  top: 45%;
+  left: -30px;
+  z-index: 10010;
+  overflow: visible;
+
+}
+
+
+
+
